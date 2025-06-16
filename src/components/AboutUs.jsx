@@ -10,18 +10,18 @@ import yachtAboutDeskmax2 from '../assets/about-deskmax@2x.png';
 export default function AboutUs() {
   return (
     <div className="container -mt-17 mx-auto px-5" id="about-us">
-      <div className="xl:flex bg-white1 rounded-3xl my-let-spacing2 pt-10 pb-30 px-5">
+      <div className="xl:flex bg-white1 rounded-3xl my-let-spacing2 pt-10 md:pt-12.5 pb-30 md:pb-32 px-5 md:px-8">
         <div>
-          <h2 className="font-medium text-[28px] leading-none text-turquoise-blue1 mb-10">
+          <h2 className="font-medium text-[28px] md:text-5xl leading-none text-turquoise-blue1 mb-10 md:mb-12.5">
             YachtJet fleet is here to take you on the ultimate adventure
           </h2>
         </div>
-        <div>
-          <p className="text-lg leading-none text-turquoise-blue1 mb-5">
+        <div className="md:w-1/2">
+          <p className="text-lg md:text-[23px] leading-none text-turquoise-blue1 mb-5">
             From spacious decks to state-of-the-art technology, our yachts are
             designed to provide the perfect blend of luxury and functionality.
           </p>
-          <p className="text-xs leading-[1.16] text-turquoise-blue3 opacity-[.4]">
+          <p className="text-xs md:text-[13px] leading-[1.16] md:leading-[1.15] text-turquoise-blue3 opacity-[.4]">
             Take a look at our selection below and choose the yacht that matches
             your needs and preferences.No matter which yacht you choose, our
             experienced crew will ensure that your journey is smooth and

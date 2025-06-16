@@ -14,6 +14,12 @@ body {
   background-color: #0e1823;
 }
 
+@utility container {
+  @variant 2xl {
+    max-width: 1440px;
+  }
+}
+
 @theme {
   --color-white1: #fbfbfb;
   --color-white2: rgba(251, 251, 251, 0.7);
