@@ -19,6 +19,7 @@ body {
   --color-white2: rgba(251, 251, 251, 0.7);
   --color-turquoise-blue1: #1b414b;
   --color-turquoise-blue2: rgba(27, 65, 75, 0.5);
+  --color-turquoise-blue3: #040306;
 }
 
 @utility my-let-spacing1 {
