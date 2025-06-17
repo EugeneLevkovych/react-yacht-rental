@@ -3,6 +3,8 @@ import Advantages from './components/Advantages';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import OurYachts from './components/OurYachts';
+import Rent from './components/Rent';
+import Reviews from './components/Reviews';
 
 export default function App() {
   return (
@@ -12,6 +14,8 @@ export default function App() {
       <AboutUs />
       <OurYachts />
       <Advantages />
+      <Rent />
+      <Reviews />
     </div>
   );
 }
