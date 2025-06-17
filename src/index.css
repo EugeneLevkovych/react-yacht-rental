@@ -23,9 +23,11 @@ body {
 @theme {
   --color-white1: #fbfbfb;
   --color-white2: rgba(251, 251, 251, 0.7);
+  --color-white3: rgba(251, 251, 251, 0.35);
   --color-turquoise-blue1: #1b414b;
   --color-turquoise-blue2: rgba(27, 65, 75, 0.5);
   --color-turquoise-blue3: #040306;
+  --color-gray1: rgba(4, 3, 6, 0.1);
 }
 
 @utility my-let-spacing1 {
@@ -34,4 +36,8 @@ body {
 
 @utility my-let-spacing2 {
   letter-spacing: -0.02em;
+}
+
+@utility my-let-spacing3 {
+  letter-spacing: -0.04em;
 }

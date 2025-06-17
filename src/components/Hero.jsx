@@ -11,7 +11,7 @@ export default function Hero() {
           surrounded by breathtaking views and state-of-the-art amenities.
         </p>
         <a
-          className="max-w-45 block bg-turquoise-blue1 hover:bg-white1 font-medium text-lg leading-[1.1] my-let-spacing2 text-white1 hover:text-turquoise-blue1 transition-all rounded-2xl px-10 py-4 mx-auto"
+          className="max-w-45 block bg-turquoise-blue1 hover:bg-white1 font-medium text-lg leading-[1.28] my-let-spacing2 text-white1 hover:text-turquoise-blue1 transition-all rounded-2xl px-10 py-4 mx-auto"
           href="#"
         >
           Yacht rental
