@@ -31,7 +31,7 @@ export default function AboutUs() {
         </div>
       </div>
       <div className="-mt-20">
-        <picture className="picture-about block w-full">
+        <picture>
           <source
             media="(min-width: 1440px)"
             srcSet={`
@@ -63,7 +63,7 @@ export default function AboutUs() {
           <img
             src="./assets/about-mob.jpg"
             alt="adventure on a yacht under the starry sky"
-            className="about-img w-full h-auto object-cover rounded-lg"
+            className="w-full h-auto object-cover rounded-3xl"
           />
         </picture>
       </div>
