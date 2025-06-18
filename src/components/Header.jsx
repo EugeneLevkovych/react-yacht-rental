@@ -1,5 +1,7 @@
 import { BUTTONS } from '../data/buttonsInfo';
+import { SOCIAL_ICONS_HEADER } from '../data/socials';
 import Button from './Button';
+import SvgSocials from './SvgSocials';
 
 export default function Header() {
   return (
@@ -18,39 +20,13 @@ export default function Header() {
         </ul>
       </nav>
       <ul className="hidden md:flex gap-2">
-        <li>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg className="size-6 fill-turquoise-blue1">
-              <use href="./sprite.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://youtube.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg className="size-6 fill-turquoise-blue1">
-              <use href="./sprite.svg#icon-youtube"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg className="size-6 fill-turquoise-blue1">
-              <use href="./sprite.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
+        {SOCIAL_ICONS_HEADER.map(item => (
+          <li key={item.id}>
+            <a href={item.href2} target="_blank" rel="noopener noreferrer">
+              <SvgSocials svgObj={item} />
+            </a>
+          </li>
+        ))}
       </ul>
       <svg className="md:hidden size-7 stroke-turquoise-blue1">
         <use href="./sprite.svg#icon-burger"></use>
