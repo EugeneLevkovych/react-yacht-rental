@@ -23,7 +23,7 @@ export default function OurYachts() {
             />
           </div>
           <div className="mx-8">
-            <div className="flex justify-between items-center border-b border-gray1 uppercase pb-4 mb-4">
+            <div className="flex justify-between items-center border-b border-gray1bord uppercase pb-4 mb-4">
               <p className="font-medium text-sm leading-[1.18] my-let-spacing3 text-turquoise-blue1">
                 Arrow
               </p>
