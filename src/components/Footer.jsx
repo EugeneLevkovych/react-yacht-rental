@@ -7,21 +7,21 @@ export default function Footer() {
   return (
     <div className="container mx-auto px-4">
       <div className="text-white1 bg-turquoise-blue1 rounded-t-3xl pt-10 md:pt-12.5 pb-5 px-7.5 md:px-12 xl:px-18.5">
-        <div className="flex flex-col md:flex-row gap-20 md:gap-22.5 xl:justify-between mb-10 md:mb-24">
-          <div className="flex justify-between">
+        <div className="flex flex-col md:flex-row md:justify-between gap-20 mb-10 md:mb-24">
+          <div className="flex justify-between md:gap-27.5 lg:gap-65 xl:gap-82.5 2xl:gap-102.5">
             <a
               className="font-medium text-sm my-let-spacing1 text-white1"
               href="index.html"
             >
               yachtjet
             </a>
-            <ul className="flex gap-1 uppercase text-[9px] leading-[1.3] md:ml-28 xl:ml-74">
+            <ul className="flex gap-1 uppercase text-[9px] leading-[1.3]">
               {BUTTONS.map(button => (
                 <Button key={button.id} name={button.name} href={button.href} />
               ))}
             </ul>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center md:block">
             <ul className="flex gap-2">
               {SOCIAL_ICONS_FOOTER.map(item => (
                 <li key={item.id}>
