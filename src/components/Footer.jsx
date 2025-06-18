@@ -6,8 +6,8 @@ import SvgSocials from './SvgSocials';
 export default function Footer() {
   return (
     <div className="container mx-auto px-4">
-      <div className="text-white1 bg-turquoise-blue1 rounded-t-3xl pt-10 md:pt-12.5 pb-5 px-7.5 md:px-12">
-        <div className="flex flex-col md:flex-row gap-20 md:gap-22.5 mb-10 md:mb-24">
+      <div className="text-white1 bg-turquoise-blue1 rounded-t-3xl pt-10 md:pt-12.5 pb-5 px-7.5 md:px-12 xl:px-18.5">
+        <div className="flex flex-col md:flex-row gap-20 md:gap-22.5 xl:justify-between mb-10 md:mb-24">
           <div className="flex justify-between">
             <a
               className="font-medium text-sm my-let-spacing1 text-white1"
