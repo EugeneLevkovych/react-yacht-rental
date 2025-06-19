@@ -31,6 +31,7 @@ body {
   --color-gray1bord: rgba(4, 3, 6, 0.1);
   --color-gray2: rgba(251, 251, 251, 0.2);
   --color-gray3: #d4bfc4;
+  --color-gray4: rgba(251, 251, 251, 0.5);
 }
 
 @utility cont-p-m {
@@ -46,6 +47,25 @@ body {
     padding-left: 50px;
     padding-right: 50px;
   }
+}
+
+@utility my-input {
+  width: 100%;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-size: 12px;
+  line-height: 1.16;
+  color: rgba(251, 251, 251, 0.4);
+  @media screen and (min-width: 768px) {
+    padding: 18px 18px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+
+.my-input:focus {
+  @apply outline-0 border-gray4 text-white1;
 }
 
 @utility my-let-spacing1 {

@@ -9,7 +9,7 @@ import advYachtMax2 from '../assets/advantages-img/advantages-max@2x.jpg';
 
 export default function Advantages() {
   return (
-    <div className="container flex flex-wrap xl:flex-nowrap gap-5 mb-20 cont-p-m">
+    <div className="container flex flex-wrap xl:flex-nowrap gap-5 md:gap-8 mb-20 cont-p-m">
       <ol className="my-counter w-full xl:w-3/5 flex flex-wrap justify-center md:gap-x-8 gap-y-10 md:gap-y-11  rounded-3xl bg-turquoise-blue1 [&_p]:counter-text [&_li]:w-full [&_li]:md:max-w-76 [&_li]:xl:max-w-70 px-5 md:px-8 xl:px-12.5 py-20 md:py-22.5">
         <li className="before:counter">
           <p className="">
@@ -65,7 +65,7 @@ export default function Advantages() {
           <img
             src="./assets/advantages.jpg"
             alt="Yacht"
-            className="w-full h-auto object-cover"
+            className="w-full h-full object-cover"
           />
         </picture>
       </div>
