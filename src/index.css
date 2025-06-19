@@ -33,6 +33,21 @@ body {
   --color-gray3: #d4bfc4;
 }
 
+@utility cont-p-m {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 @utility my-let-spacing1 {
   letter-spacing: -0.03em;
 }
@@ -58,11 +73,13 @@ body {
   letter-spacing: -0.05em;
   text-transform: uppercase;
   color: #fbfbfb;
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+  }
 }
 
 @utility counter-text {
   padding-top: 18px;
-  padding-bottom: 40px;
   margin-top: 18px;
   font-size: 12px;
   line-height: 1.16;
@@ -70,4 +87,8 @@ body {
   opacity: 0.8;
   color: #fbfbfb;
   border-top: 2px solid rgba(251, 251, 251, 0.1);
+  @media screen and (min-width: 768px) {
+    font-size: 13px;
+    line-height: 1.15;
+  }
 }
