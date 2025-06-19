@@ -9,26 +9,24 @@ import advYachtMax2 from '../assets/advantages-img/advantages-max@2x.jpg';
 
 export default function Advantages() {
   return (
-    <div className="container flex flex-wrap xl:flex-nowrap gap-5 px-4 mx-auto">
-      <ol className="w-full xl:w-3/5 rounded-3xl bg-turquoise-blue1 px-5 py-20">
-        <li>
-          <p className="border-b">01</p>
-          <p>Swimming and water sports: try your hand at water skiing</p>
+    <div className="container flex flex-wrap xl:flex-nowrap gap-5 px-4 mx-auto mb-20">
+      <ol className="my-counter w-full xl:w-3/5 rounded-3xl bg-turquoise-blue1 [&_p]:counter-text px-5 py-20">
+        <li className="before:counter">
+          <p className="">
+            Swimming and water sports: try your hand at water skiing
+          </p>
         </li>
-        <li>
-          <p>02</p>
-          <p>Fishing: try to catch your own dinner</p>
+        <li className="before:counter">
+          <p className="">Fishing: try to catch your own dinner</p>
         </li>
-        <li>
-          <p>03</p>
-          <p>
+        <li className="before:counter">
+          <p className="">
             Sightseeing tours: take a shore or island tour, enjoy the views and
             sunsets from the water{' '}
           </p>
         </li>
-        <li>
-          <p>04</p>
-          <p>
+        <li className="before:counter">
+          <p className="">
             Rest and relaxation: read a book or listen to music while enjoying
             the outdoor atmosphere.
           </p>

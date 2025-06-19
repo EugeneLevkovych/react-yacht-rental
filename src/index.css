@@ -44,3 +44,30 @@ body {
 @utility my-let-spacing3 {
   letter-spacing: -0.04em;
 }
+
+@utility my-counter {
+  counter-reset: my-counter;
+}
+
+@utility counter {
+  counter-increment: my-counter;
+  content: counter(my-counter, decimal-leading-zero);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+}
+
+@utility counter-text {
+  padding-top: 18px;
+  padding-bottom: 40px;
+  margin-top: 18px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+  opacity: 0.8;
+  color: #fbfbfb;
+  border-top: 2px solid rgba(251, 251, 251, 0.1);
+}
