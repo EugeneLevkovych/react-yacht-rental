@@ -9,7 +9,7 @@ import yachtAboutDeskmax2 from '../assets/about-deskmax@2x.png';
 
 export default function AboutUs() {
   return (
-    <div className="container -mt-17 mx-auto px-4" id="about-us">
+    <div className="container -mt-17 cont-p-m" id="about-us">
       <div className="xl:flex bg-white1 rounded-3xl my-let-spacing2 pt-10 md:pt-12.5 pb-30 md:pb-32.5 xl:pb-45 px-5 md:px-8 xl:px-12.5">
         <div>
           <h2 className="font-medium text-[28px] md:text-5xl leading-none text-turquoise-blue1 mb-10 md:mb-12.5">

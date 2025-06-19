@@ -3,7 +3,7 @@ import yacht1mobBig from '../assets/our-yachts-img/our-yachts1-desk@2x.jpg';
 
 export default function OurYachts() {
   return (
-    <div className="container mx-auto px-4 py-20">
+    <div className="container py-20 cont-p-m">
       <div className="max-w-80 mb-10 mx-auto">
         <h2 className="font-medium text-[28px] leading-none my-let-spacing2 text-center text-white1">
           Choose your dream yacht and sail away into the sunset

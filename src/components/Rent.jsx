@@ -9,7 +9,7 @@ import rentMax2 from '../assets/rent-img/rent-max@2x.jpg';
 
 export default function Rent() {
   return (
-    <div className="container flex flex-wrap xl:flex-nowrap gap-20 md:gap-25 xl:gap-12.5 mx-auto px-4">
+    <div className="container flex flex-wrap xl:flex-nowrap gap-20 md:gap-25 xl:gap-12.5 cont-p-m">
       <div className="w-full xl:w-3/5">
         <h2 className="font-medium text-[28px] leading-none my-let-spacing2 text-white1 mb-10">
           Rent a yacht now

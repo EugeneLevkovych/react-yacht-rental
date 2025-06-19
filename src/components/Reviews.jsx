@@ -3,7 +3,7 @@ import rev1Img2x from '../assets/reviews-img/reviews1@2x.png';
 
 export default function Reviews() {
   return (
-    <div className="container my-let-spacing2 text-center text-white1 mx-auto px-4 py-37.5">
+    <div className="container my-let-spacing2 text-center text-white1 py-37.5 cont-p-m">
       <h2 className="text-medium text-[28px] leading-none mb-[25px]">
         YachtJet take pride in providing the best possible service and
         experience to our customers
