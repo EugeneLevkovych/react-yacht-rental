@@ -22,11 +22,23 @@ export default function Reviews() {
       </p>
       <Swiper
         modules={[Navigation, Pagination, A11y]}
-        spaceBetween={32}
-        // slidesPerView={3}
         navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 32,
+          },
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 26,
+          },
+          1440: {
+            slidesPerView: 3,
+            spaceBetween: 32,
+          },
+        }}
         onSlideChange={() => console.log('slide change')}
         onSwiper={swiper => console.log(swiper)}
       >
