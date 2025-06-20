@@ -1,5 +1,11 @@
-import yacht1mobSm from '../assets/our-yachts-img/our-yachts1-desk.jpg';
-import yacht1mobBig from '../assets/our-yachts-img/our-yachts1-desk@2x.jpg';
+import { Navigation, Pagination, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+import OurYachtsCard from './OurYachtsCard';
+import { OUR_YACHTS_INFO } from '../data/ourYachtsInfo';
 
 export default function OurYachts() {
   return (
@@ -9,44 +15,33 @@ export default function OurYachts() {
           Choose your dream yacht and sail away into the sunset
         </h2>
       </div>
-      <ul className="bg-white1 rounded-3xl pt-4 pb-8 px-4 mb-10">
-        <li>
-          <div className="w-full rounded-3xl overflow-hidden mb-8">
-            <img
-              className="w-full h-full object-cover"
-              srcSet={`
-              ${yacht1mobBig} 2x,
-              ${yacht1mobSm} 1x
-            `}
-              src={yacht1mobSm}
-              alt="White yacht"
-            />
-          </div>
-          <div className="mx-8">
-            <div className="flex justify-between items-center border-b border-gray1bord uppercase pb-4 mb-4">
-              <p className="font-medium text-sm leading-[1.18] my-let-spacing3 text-turquoise-blue1">
-                Arrow
-              </p>
-              <p className="text-turquoise-blue3 opacity-[.4]">Luxury Yachts</p>
-            </div>
-            <div className="flex justify-between text-sm leading-[1.18] tracking-[.03em] text-turquoise-blue3">
-              <ul className="uppercase opacity-[.4]">
-                <li>LENGTH</li>
-                <li>BUILDER</li>
-                <li>BUILT</li>
-                <li>GUESTS</li>
-                <li>PRICE</li>
-              </ul>
-              <ul>
-                <li>48m(155ft)</li>
-                <li>Admiral</li>
-                <li>2021</li>
-                <li>11 in 5 cabins</li>
-                <li>€33,500,000</li>
-              </ul>
-            </div>
-          </div>
-        </li>
+      <ul className="">
+        <Swiper
+          modules={[Navigation, Pagination, A11y]}
+          navigation
+          pagination={{ clickable: true }}
+          breakpoints={{
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 32,
+            },
+            1280: {
+              slidesPerView: 3,
+              spaceBetween: 25,
+            },
+            1440: {
+              spaceBetween: 32,
+            },
+          }}
+          onSlideChange={() => console.log('slide change')}
+          onSwiper={swiper => console.log(swiper)}
+        >
+          {OUR_YACHTS_INFO.map(item => (
+            <SwiperSlide key={item.id}>
+              <OurYachtsCard cardObj={item} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </ul>
       <a
         className="max-w-45 block bg-transparent hover:bg-white1 font-medium text-lg leading-[1.28] my-let-spacing2 text-white1 hover:text-turquoise-blue1 border border-white3 transition-all rounded-2xl px-10 py-4 mx-auto"

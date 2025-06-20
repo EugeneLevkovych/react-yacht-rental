@@ -1,9 +1,8 @@
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 
 import { REVIEWS_INFO } from '../data/reviewsInfo';
 import ReviewsCard from './ReviewsCard';
@@ -24,7 +23,6 @@ export default function Reviews() {
         modules={[Navigation, Pagination, A11y]}
         navigation
         pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
         breakpoints={{
           768: {
             slidesPerView: 2,

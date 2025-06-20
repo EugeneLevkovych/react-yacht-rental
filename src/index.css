@@ -59,6 +59,7 @@ body {
   color: rgba(251, 251, 251, 0.4);
   @media screen and (min-width: 768px) {
     padding: 18px 18px;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.28;
   }
