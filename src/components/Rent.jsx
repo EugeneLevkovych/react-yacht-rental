@@ -9,7 +9,7 @@ import rentMax2 from '../assets/rent-img/rent-max@2x.jpg';
 
 export default function Rent() {
   return (
-    <div className="container flex flex-wrap xl:flex-nowrap xl:flex-row-reverse gap-20 md:gap-25 xl:gap-12.5 cont-p-m">
+    <div className="container flex flex-wrap xl:flex-nowrap xl:flex-row-reverse 2xl:justify-end gap-20 md:gap-25 xl:gap-12.5 cont-p-m">
       <div className="w-full xl:w-118">
         <form className="md:max-w-118 mx-auto xl:mx-0 [&_input]:mb-4.5 ">
           <h2 className="font-medium text-[28px] md:text-5xl leading-none my-let-spacing2 text-white1 mb-10 md:mb-12.5">
@@ -32,7 +32,7 @@ export default function Rent() {
           </button>
         </form>
       </div>
-      <div className="w-full xl:h-auto xl:w-164.5 2xl:w-192 rounded-3xl overflow-hidden">
+      <div className="w-full xl:w-164.5 2xl:w-192 rounded-3xl overflow-hidden">
         <picture>
           <source
             media="(min-width: 1440px)"
@@ -63,9 +63,9 @@ export default function Rent() {
                         `}
           />
           <img
+            className="w-full h-full object-cover"
             src="./assets/rent-img/rent-mob.jpg"
             alt="Yacht"
-            className="w-full h-full object-cover"
           />
         </picture>
       </div>
