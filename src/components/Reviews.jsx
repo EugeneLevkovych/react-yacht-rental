@@ -1,5 +1,12 @@
-import rev1Img from '../assets/reviews-img/reviews1.png';
-import rev1Img2x from '../assets/reviews-img/reviews1@2x.png';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+import { REVIEWS_INFO } from '../data/reviewsInfo';
+import ReviewsCard from './ReviewsCard';
 
 export default function Reviews() {
   return (
@@ -13,25 +20,22 @@ export default function Reviews() {
         just take our word for it - read on to find out what they have to say
         about their journey with us.
       </p>
-      <ul>
-        <li className="w-full bg-white1 rounded-3xl px-9 py-8">
-          <img
-            className="size-14 mx-auto mb-6"
-            srcSet={`${rev1Img2x} 2x`}
-            src={rev1Img}
-            alt="John Wax"
-          />
-
-          <p className="font-md text-lg leading-[1.1] my-let-spacing2 text-center text-turquoise-blue3 mb-2">
-            John Wax
-          </p>
-          <p className="text-gray1 opacity-[.4]">
-            I rented the Lagoon 620 with my family for a week-long vacation and
-            it was the best decision ever. The yacht was spacious, comfortable,
-            and luxurious, and the crew took care of everything.
-          </p>
-        </li>
-      </ul>
+      <Swiper
+        modules={[Navigation, Pagination, A11y]}
+        spaceBetween={32}
+        // slidesPerView={3}
+        navigation
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={swiper => console.log(swiper)}
+      >
+        {REVIEWS_INFO.map(item => (
+          <SwiperSlide key={item.id}>
+            <ReviewsCard cardObj={item} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 }

@@ -1,11 +1,11 @@
-import yachtAboutMob from '../assets/about-mob.png';
-import yachtAboutMob2 from '../assets/about-mob@2x.png';
-import yachtAboutTab from '../assets/about-tab.png';
-import yachtAboutTab2 from '../assets/about-tab@2x.png';
-import yachtAboutDesktop from '../assets/about-desktop.png';
-import yachtAboutDesktop2 from '../assets/about-desktop@2x.png';
-import yachtAboutDeskmax from '../assets/about-deskmax.png';
-import yachtAboutDeskmax2 from '../assets/about-deskmax@2x.png';
+import yachtAboutMob from '../assets/about-img/about-mob.png';
+import yachtAboutMob2 from '../assets/about-img/about-mob@2x.png';
+import yachtAboutTab from '../assets/about-img/about-tab.png';
+import yachtAboutTab2 from '../assets/about-img/about-tab@2x.png';
+import yachtAboutDesktop from '../assets/about-img/about-desktop.png';
+import yachtAboutDesktop2 from '../assets/about-img/about-desktop@2x.png';
+import yachtAboutDeskmax from '../assets/about-img/about-deskmax.png';
+import yachtAboutDeskmax2 from '../assets/about-img/about-deskmax@2x.png';
 
 export default function AboutUs() {
   return (

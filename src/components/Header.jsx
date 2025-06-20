@@ -5,7 +5,7 @@ import SvgSocials from './SvgSocials';
 
 export default function Header() {
   return (
-    <div className="h-10.5 md:h-12 absolute left-[50%] top-5 -translate-x-1/2 flex justify-between items-center max-w-83.5 md:max-w-176 xl:max-w-270 w-full bg-white1 rounded-lg py-1 px-5 md:px-7 xl:px-7.5">
+    <div className="h-10.5 md:h-12 absolute left-[50%] top-5 -translate-x-1/2 flex justify-between items-center max-w-83.5 md:max-w-176 xl:max-w-270 2xl:max-w-310 w-full bg-white1 rounded-lg py-1 px-5 md:px-7 xl:px-7.5">
       <nav className="flex items-center">
         <a
           className="font-medium text-sm md:text-xl my-let-spacing1 text-turquoise-blue1"
