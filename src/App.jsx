@@ -11,8 +11,6 @@ import Reviews from './components/Reviews';
 export default function App() {
   return (
     <div>
-      {/* <div className="relative"> */}
-      {/* <Header /> */}
       <MobileMenu />
       <Hero />
       <AboutUs />

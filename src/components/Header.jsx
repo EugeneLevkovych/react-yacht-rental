@@ -13,9 +13,13 @@ export default function Header() {
         >
           yachtjet
         </a>
-        <ul className="hidden w-70.5 md:flex gap-1 uppercase text-[9px] leading-[1.3] text-white1 md:ml-28 xl:ml-74">
+        <ul className="hidden w-70.5 md:flex gap-1 uppercase text-[9px] leading-[1.3] text-white1 md:ml-28 lg:ml-60 xl:ml-74 2xl:ml-94">
           {BUTTONS.map(button => (
-            <Button key={button.id} buttonObj={button} />
+            <Button
+              key={button.id}
+              buttonObj={button}
+              hoverColor="turquoise-blue1"
+            />
           ))}
         </ul>
       </nav>

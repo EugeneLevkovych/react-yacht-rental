@@ -17,7 +17,12 @@ export default function Footer() {
             </a>
             <ul className="w-51.5 md:w-70.5 flex gap-1 uppercase text-[9px] leading-[1.3]">
               {BUTTONS.map(button => (
-                <Button key={button.id} buttonObj={button} />
+                <Button
+                  key={button.id}
+                  buttonObj={button}
+                  hoverColor="white1"
+                  hoverTextColor="turquoise-blue1"
+                />
               ))}
             </ul>
           </div>

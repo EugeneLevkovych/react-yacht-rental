@@ -18,9 +18,13 @@ export default function MobileMenu() {
         </svg>
       </div>
 
-      <ul className="flex flex-col items-center gap-1">
+      <ul className="flex flex-col items-center gap-1 text-white1">
         {BUTTONS.map(button => (
-          <Button key={button.id} buttonObj={button} />
+          <Button
+            key={button.id}
+            buttonObj={button}
+            hoverColor="turquoise-blue1"
+          />
         ))}
       </ul>
 
