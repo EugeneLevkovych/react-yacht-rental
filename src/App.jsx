@@ -1,16 +1,19 @@
 import AboutUs from './components/AboutUs';
 import Advantages from './components/Advantages';
 import Footer from './components/Footer';
-import Header from './components/Header';
+import Header from './components/Headache';
 import Hero from './components/Hero';
+import MobileMenu from './components/MobileMenu';
 import OurYachts from './components/OurYachts';
 import Rent from './components/Rent';
 import Reviews from './components/Reviews';
 
 export default function App() {
   return (
-    <div className="relative">
-      <Header />
+    <div>
+      {/* <div className="relative"> */}
+      {/* <Header /> */}
+      <MobileMenu />
       <Hero />
       <AboutUs />
       <OurYachts />

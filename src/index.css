@@ -27,7 +27,8 @@ body {
   --color-turquoise-blue1: #1b414b;
   --color-turquoise-blue2: #5d7980;
   --color-turquoise-blue3: #040306;
-  --color-turquoise-blue4: #0e1823 --color-gray1: rgb(4, 3, 6);
+  --color-turquoise-blue4: #0e1823;
+  --color-gray1: rgb(4, 3, 6);
   --color-gray1bord: rgba(4, 3, 6, 0.1);
   --color-gray2: rgba(251, 251, 251, 0.2);
   --color-gray3: #d4bfc4;

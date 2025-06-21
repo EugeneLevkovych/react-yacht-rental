@@ -17,7 +17,7 @@ export default function Footer() {
             </a>
             <ul className="flex gap-1 uppercase text-[9px] leading-[1.3]">
               {BUTTONS.map(button => (
-                <Button key={button.id} name={button.name} href={button.href} />
+                <Button key={button.id} buttonObj={button} />
               ))}
             </ul>
           </div>
