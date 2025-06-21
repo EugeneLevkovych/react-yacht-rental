@@ -15,7 +15,7 @@ export default function Footer() {
             >
               yachtjet
             </a>
-            <ul className="flex gap-1 uppercase text-[9px] leading-[1.3]">
+            <ul className="w-51.5 md:w-70.5 flex gap-1 uppercase text-[9px] leading-[1.3]">
               {BUTTONS.map(button => (
                 <Button key={button.id} buttonObj={button} />
               ))}

@@ -3,7 +3,7 @@ import { SOCIAL_ICONS_HEADER } from '../data/socials';
 import Button from './Button';
 import SvgSocials from './SvgSocials';
 
-export default function Header2() {
+export default function Header() {
   return (
     <div className="h-10.5 md:h-12 flex justify-between items-center w-full bg-white1 rounded-lg py-1 px-5 md:px-7 xl:px-7.5 mb-49.5 md:mb-50 xl:mb-38.5">
       <nav className="flex items-center">
@@ -13,7 +13,7 @@ export default function Header2() {
         >
           yachtjet
         </a>
-        <ul className="hidden md:flex gap-1 uppercase text-[9px] leading-[1.3] text-white1 md:ml-28 xl:ml-74">
+        <ul className="hidden w-70.5 md:flex gap-1 uppercase text-[9px] leading-[1.3] text-white1 md:ml-28 xl:ml-74">
           {BUTTONS.map(button => (
             <Button key={button.id} buttonObj={button} />
           ))}

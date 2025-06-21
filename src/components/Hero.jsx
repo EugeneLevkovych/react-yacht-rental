@@ -1,10 +1,10 @@
-import Header2 from './Header2';
+import Header from './Header';
 
 export default function Hero() {
   return (
     <div className="md:max-w-192 lg:max-w-256 xl:max-w-320 2xl:max-w-360 w-full bg-center bg-cover bg-[url(assets/hero-img/hero-bg-mob@2x.jpg)] md:bg-[url(assets/hero-img/hero-bg-tab@2x.jpg)] xl:bg-[url(assets/hero-img/hero-bg-desktop@2x.jpg)] 2xl:bg-[url(assets/hero-img/hero-bg-deskmax@2x.jpg)] mx-auto">
       <div className="container pt-5 md:pt-8 pb-75.5 cont-p-m">
-        <Header2 />
+        <Header />
         <h1 className="font-medium text-[2rem] md:text-[4.38rem] xl:text-[5rem] my-let-spacing2 text-center leading-none text-white1 mb-6">
           Explore the High Seas with Our Luxury Yacht Rentals
         </h1>
