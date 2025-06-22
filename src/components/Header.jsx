@@ -5,7 +5,7 @@ import SvgSocials from './SvgSocials';
 
 export default function Header({ onToggleMenu }) {
   return (
-    <div className="h-10.5 md:h-12 flex justify-between items-center w-full bg-white1 rounded-lg py-1 px-5 md:px-7 xl:px-7.5 mb-49.5 md:mb-50 xl:mb-38.5">
+    <div className="h-10.5 md:h-12 xl:w-270 flex justify-between items-center w-full bg-white1 rounded-lg py-1 px-5 md:px-7 xl:px-7.5 mb-49.5 md:mb-50 xl:mb-38.5 mx-auto">
       <nav className="flex items-center">
         <a
           className="font-medium text-sm md:text-xl my-let-spacing1 text-turquoise-blue1"
