@@ -19,6 +19,7 @@ export default function Header() {
               key={button.id}
               buttonObj={button}
               hoverColor="turquoise-blue1"
+              bgColor="turquoise-blue2"
             />
           ))}
         </ul>

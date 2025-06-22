@@ -25,7 +25,7 @@ export const OUR_YACHTS_INFO = [
   },
   {
     id: 2,
-    yachtName: 'BENETTI OASIS 40M BO122',
+    yachtName: 'BENETTI OASIS 40M BO122 (truncate)',
     length: '41m (133ft)',
     builder: 'Benetti',
     built: '2025',

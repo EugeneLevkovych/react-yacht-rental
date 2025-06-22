@@ -2,6 +2,7 @@ export default function Button({
   buttonObj: { name, href },
   hoverColor,
   hoverTextColor,
+  bgColor,
 }) {
   const hoverClass =
     hoverColor === 'turquoise-blue1'
@@ -13,11 +14,23 @@ export default function Button({
       ? 'hover:text-turquoise-blue1'
       : 'hover:text-white1';
 
+  const bgColorClass =
+    bgColor === 'turquoise-blue2'
+      ? 'bg-turquoise-blue2'
+      : bgColor === 'turquoise-blue5'
+        ? 'bg-turquoise-blue5'
+        : bgColor === 'turquoise-blue6'
+          ? 'bg-turquoise-blue6'
+          : 'bg-turquoise-blue2';
+
   return (
-    <li
-      className={`flex justify-center items-center w-full max-w-22.5 h-10 ${hoverTextClass} rounded-lg bg-turquoise-blue2  ${hoverClass} transition-all cursor-pointer`}
-    >
-      <a href={href}>{name}</a>
+    <li className="w-full max-w-22.5">
+      <a
+        href={href}
+        className={`flex h-10 justify-center items-center ${hoverTextClass} rounded-lg ${bgColorClass} ${hoverClass} transition-all cursor-pointer`}
+      >
+        {name}
+      </a>
     </li>
   );
 }

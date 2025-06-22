@@ -24,6 +24,7 @@ export default function MobileMenu() {
             key={button.id}
             buttonObj={button}
             hoverColor="turquoise-blue1"
+            bgColor="turquoise-blue6"
           />
         ))}
       </ul>

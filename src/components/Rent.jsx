@@ -25,7 +25,7 @@ export default function Rent() {
             placeholder="Comment"
           ></textarea>
           <button
-            className="bg-turquoise-blue1 font-medium text-sm md:text-lg leading-[1.28] md:leading-[1.1] my-let-spacing2 text-white1 rounded-2xl px-11 md:px-18.5 py-[14px] md:py-[18px]"
+            className="bg-turquoise-blue1 font-medium text-sm md:text-lg leading-[1.28] md:leading-[1.1] my-let-spacing2 text-white1 rounded-2xl px-11 md:px-18.5 py-[14px] md:py-[18px] cursor-pointer"
             type="submit"
           >
             Send

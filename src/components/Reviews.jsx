@@ -9,7 +9,10 @@ import ReviewsCard from './ReviewsCard';
 
 export default function Reviews() {
   return (
-    <div className="container my-let-spacing2 text-center text-white1 py-37.5 cont-p-m">
+    <div
+      className="container my-let-spacing2 text-center text-white1 py-37.5 cont-p-m"
+      id="reviews"
+    >
       <h2 className="text-medium text-[28px] leading-none mb-[25px]">
         YachtJet take pride in providing the best possible service and
         experience to our customers

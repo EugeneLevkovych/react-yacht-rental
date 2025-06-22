@@ -22,6 +22,7 @@ export default function Footer() {
                   buttonObj={button}
                   hoverColor="white1"
                   hoverTextColor="turquoise-blue1"
+                  bgColor="turquoise-blue5"
                 />
               ))}
             </ul>

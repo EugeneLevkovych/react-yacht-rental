@@ -1,7 +1,10 @@
 export default function OurYachtsCard({ cardObj }) {
   const CURRENCY = '€';
   return (
-    <li className="bg-white1 rounded-3xl pt-4 pb-8 px-4 mb-10">
+    <li
+      className="bg-white1 rounded-3xl pt-4 pb-8 px-4 mb-10 cursor-pointer"
+      id="our-yacht"
+    >
       <div className="w-full rounded-3xl overflow-hidden mb-8">
         <img
           className="w-full h-full object-cover"
@@ -15,10 +18,15 @@ export default function OurYachtsCard({ cardObj }) {
       </div>
       <div className="mx-8">
         <div className="flex justify-between items-center border-b border-gray1bord uppercase pb-4 mb-4">
-          <p className="font-medium text-sm leading-[1.18] my-let-spacing3 text-turquoise-blue1">
+          <p
+            className="font-medium text-sm leading-[1.18] my-let-spacing3 text-turquoise-blue1 truncate max-w-[40%]"
+            title={cardObj.yachtName}
+          >
             {cardObj.yachtName}
           </p>
-          <p className="text-turquoise-blue3 opacity-[.4]">Luxury Yachts</p>
+          <p className="text-turquoise-blue3 opacity-[.4] flex-shrink-0">
+            Luxury Yachts
+          </p>
         </div>
         <div className="flex justify-between text-sm leading-[1.18] tracking-[.03em] text-turquoise-blue3">
           <ul className="uppercase opacity-[.4]">

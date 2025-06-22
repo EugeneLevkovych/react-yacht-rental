@@ -1,6 +1,9 @@
 export default function ReviewsCard({ cardObj }) {
   return (
-    <div className="w-full bg-white1 rounded-3xl px-9 py-8">
+    <div
+      className="w-full bg-white1 rounded-3xl px-9 py-8 cursor-pointer"
+      id="reviews"
+    >
       <img
         className="size-14 mx-auto mb-6"
         srcSet={`${cardObj.img2} 2x`}
