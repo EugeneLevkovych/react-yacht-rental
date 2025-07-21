@@ -10,13 +10,12 @@ import yachtAboutDeskmax2 from '../assets/about-img/about-deskmax@2x.png';
 export default function AboutUs() {
   return (
     <div className="container -mt-17 cont-p-m" id="about-us">
-      <div className="xl:flex bg-white1 rounded-3xl my-let-spacing2 pt-10 md:pt-12.5 pb-30 md:pb-32.5 xl:pb-45 px-5 md:px-8 xl:px-12.5">
-        <div>
-          <h2 className="font-medium text-[28px] md:text-5xl leading-none text-turquoise-blue1 mb-10 md:mb-12.5">
-            YachtJet fleet is here to take you on the ultimate adventure
-          </h2>
-        </div>
-        <div className="md:w-1/2">
+      <div className="flex flex-col lg:flex-row gap-10 md:gap-12.5 lg:gap-20 xl:gap-47.5 2xl:gap-75 bg-white1 rounded-3xl my-let-spacing2 pt-10 md:pt-12.5 pb-30 md:pb-32.5 xl:pb-45 px-5 md:px-8 xl:px-12.5">
+        <h2 className="lg:w-110 xl:w-134 font-medium text-[28px] md:text-5xl leading-none text-turquoise-blue1">
+          YachtJet fleet is here to take you on the ultimate adventure
+        </h2>
+
+        <div className="md:w-97.5 xl:w-88.5 2xl:w-101">
           <p className="text-lg md:text-[23px] leading-none text-turquoise-blue1 mb-5">
             From spacious decks to state-of-the-art technology, our yachts are
             designed to provide the perfect blend of luxury and functionality.
